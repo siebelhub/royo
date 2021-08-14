@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="04/12/2021 19:49:58"
+   UPDATED_BY="SADMIN"
+   CREATED="01/23/2021 18:43:58"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="06/22/2021 14:15:13"
+	   NAME="TSIT Chat Server"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="06/22/2021 14:15:15"
+	   UPDATED_BY="SADMIN"
+	   CREATED="06/21/2021 19:13:19"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<INTEGRATION_OBJECT
+		   BASE_OBJECT_TYPE="XML"
+		   EXTERNAL_NAME="IOAssignTicket"
+		   INACTIVE="N"
+		   NAME="IOAssignTicket"
+		   UPDATED="07/06/2021 20:53:59"
+		   UPDATED_BY="SADMIN"
+		   CREATED="07/06/2021 20:53:35"
+		   CREATED_BY="SADMIN">
+			<INTEGRATION_COMPONENT
+			   ADAPTER_INFO="RootIC"
+			   CARDINALITY="One"
+			   COMMENTS="Could be more than one, but to test with EAI BSs, Zero or More or One or More has bugs. Product defect: 32710657. - In Siebel 21.7+ use SiebelHierInput&quot; = &quot;Y&quot; as input arg for Proxy BS."
+			   EXTERNAL_NAME="RootIC"
+			   EXTERNAL_SEQUENCE="1"
+			   INACTIVE="N"
+			   NAME="RootIC"
+			   SHARE="N"
+			   UPDATED="08/09/2021 19:27:53"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/06/2021 20:55:04"
+			   CREATED_BY="SADMIN">
+				<INTEGRATION_COMPONENT_FIELD
+				   EXTERNAL_NAME="id"
+				   EXTERNAL_REQUIRED="N"
+				   EXTERNAL_SEQUENCE="1"
+				   FIELD_TYPE="Data"
+				   INACTIVE="N"
+				   NAME="id"
+				   PHYSICAL_DATA_TYPE="DTYPE_TEXT"
+				   REQUIRED="N"
+				   USER_VISIBLE="Y"
+				   XML_STYLE="Element"
+				   XML_TAG="id"
+				   UPDATED="07/06/2021 20:56:49"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/06/2021 20:56:24"
+				   CREATED_BY="SADMIN">
+					<INTEGRATION_COMPONENT_FIELD_USER_PROP
+					   COMMENTS="Very important declare it, avoiding tranformations errors in JBOSS outbounder."
+					   INACTIVE="N"
+					   NAME="type"
+					   VALUE="string"
+					   UPDATED="08/09/2021 19:22:21"
+					   UPDATED_BY="SADMIN"
+					   CREATED="07/06/2021 21:24:04"
+					   CREATED_BY="SADMIN">
+					</INTEGRATION_COMPONENT_FIELD_USER_PROP>
+				</INTEGRATION_COMPONENT_FIELD>
+				<INTEGRATION_COMPONENT_FIELD
+				   EXTERNAL_NAME="method"
+				   EXTERNAL_REQUIRED="N"
+				   EXTERNAL_SEQUENCE="3"
+				   FIELD_TYPE="Data"
+				   INACTIVE="N"
+				   NAME="method"
+				   PHYSICAL_DATA_TYPE="DTYPE_TEXT"
+				   REQUIRED="N"
+				   USER_VISIBLE="Y"
+				   XML_STYLE="Element"
+				   XML_TAG="method"
+				   UPDATED="07/06/2021 20:57:36"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/06/2021 20:57:26"
+				   CREATED_BY="SADMIN">
+					<INTEGRATION_COMPONENT_FIELD_USER_PROP
+					   COMMENTS="Very important declare it, avoiding tranformations errors in JBOSS outbounder."
+					   INACTIVE="N"
+					   NAME="type"
+					   VALUE="string"
+					   UPDATED="08/09/2021 19:22:23"
+					   UPDATED_BY="SADMIN"
+					   CREATED="07/06/2021 21:25:32"
+					   CREATED_BY="SADMIN">
+					</INTEGRATION_COMPONENT_FIELD_USER_PROP>
+				</INTEGRATION_COMPONENT_FIELD>
+				<INTEGRATION_COMPONENT_FIELD
+				   EXTERNAL_NAME="to"
+				   EXTERNAL_REQUIRED="N"
+				   EXTERNAL_SEQUENCE="2"
+				   FIELD_TYPE="Data"
+				   INACTIVE="N"
+				   NAME="to"
+				   PHYSICAL_DATA_TYPE="DTYPE_TEXT"
+				   REQUIRED="N"
+				   USER_VISIBLE="Y"
+				   XML_STYLE="Element"
+				   XML_TAG="to"
+				   UPDATED="07/06/2021 20:57:08"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/06/2021 20:56:54"
+				   CREATED_BY="SADMIN">
+					<INTEGRATION_COMPONENT_FIELD_USER_PROP
+					   COMMENTS="Very important declare it, avoiding tranformations errors in JBOSS outbounder."
+					   INACTIVE="N"
+					   NAME="type"
+					   VALUE="string"
+					   UPDATED="08/09/2021 19:22:31"
+					   UPDATED_BY="SADMIN"
+					   CREATED="07/07/2021 15:06:21"
+					   CREATED_BY="SADMIN">
+					</INTEGRATION_COMPONENT_FIELD_USER_PROP>
+				</INTEGRATION_COMPONENT_FIELD>
+				<INTEGRATION_COMPONENT_FIELD
+				   EXTERNAL_NAME="type"
+				   EXTERNAL_REQUIRED="N"
+				   EXTERNAL_SEQUENCE="4"
+				   FIELD_TYPE="Data"
+				   INACTIVE="N"
+				   NAME="type"
+				   PHYSICAL_DATA_TYPE="DTYPE_TEXT"
+				   REQUIRED="N"
+				   USER_VISIBLE="Y"
+				   XML_STYLE="Element"
+				   XML_TAG="type"
+				   UPDATED="07/06/2021 20:58:01"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/06/2021 20:57:51"
+				   CREATED_BY="SADMIN">
+					<INTEGRATION_COMPONENT_FIELD_USER_PROP
+					   COMMENTS="Very important declare it, avoiding tranformations errors in JBOSS outbounder."
+					   INACTIVE="N"
+					   NAME="type"
+					   VALUE="string"
+					   UPDATED="08/09/2021 19:22:34"
+					   UPDATED_BY="SADMIN"
+					   CREATED="07/07/2021 15:06:25"
+					   CREATED_BY="SADMIN">
+					</INTEGRATION_COMPONENT_FIELD_USER_PROP>
+				</INTEGRATION_COMPONENT_FIELD>
+				<INTEGRATION_COMPONENT_FIELD
+				   EXTERNAL_NAME="uri"
+				   EXTERNAL_REQUIRED="N"
+				   EXTERNAL_SEQUENCE="5"
+				   FIELD_TYPE="Data"
+				   INACTIVE="N"
+				   NAME="uri"
+				   PHYSICAL_DATA_TYPE="DTYPE_TEXT"
+				   REQUIRED="N"
+				   USER_VISIBLE="Y"
+				   XML_STYLE="Element"
+				   XML_TAG="uri"
+				   UPDATED="07/06/2021 20:58:24"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/06/2021 20:58:14"
+				   CREATED_BY="SADMIN">
+					<INTEGRATION_COMPONENT_FIELD_USER_PROP
+					   COMMENTS="Very important declare it, avoiding tranformations errors in JBOSS outbounder."
+					   INACTIVE="N"
+					   NAME="type"
+					   VALUE="string"
+					   UPDATED="08/09/2021 19:22:37"
+					   UPDATED_BY="SADMIN"
+					   CREATED="07/07/2021 15:06:31"
+					   CREATED_BY="SADMIN">
+					</INTEGRATION_COMPONENT_FIELD_USER_PROP>
+				</INTEGRATION_COMPONENT_FIELD>
+				<INTEGRATION_COMPONENT_USER_PROP
+				   COMMENTS="Very important declare it, avoiding tranformations errors in JBOSS outbounder."
+				   INACTIVE="N"
+				   NAME="type"
+				   VALUE="object"
+				   UPDATED="08/09/2021 19:22:45"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/06/2021 20:55:54"
+				   CREATED_BY="SADMIN">
+				</INTEGRATION_COMPONENT_USER_PROP>
+			</INTEGRATION_COMPONENT>
+			<INTEGRATION_COMPONENT
+			   ADAPTER_INFO="resource"
+			   CARDINALITY="One"
+			   COMMENTS="Could be more than one, but to test with EAI BSs, Zero or More or One or More has bugs. Product defect: 32710657. - In Siebel 21.7+ use SiebelHierInput&quot; = &quot;Y&quot; as input arg for Proxy BS."
+			   EXTERNAL_NAME="resource"
+			   EXTERNAL_SEQUENCE="2"
+			   INACTIVE="N"
+			   NAME="resource"
+			   PARENT_INTEGRATION_COMPONENT="RootIC"
+			   SHARE="N"
+			   UPDATED="08/09/2021 19:28:07"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/06/2021 20:55:22"
+			   CREATED_BY="SADMIN">
+				<INTEGRATION_COMPONENT_FIELD
+				   EXTERNAL_NAME="agentIdentity"
+				   EXTERNAL_REQUIRED="N"
+				   EXTERNAL_SEQUENCE="2"
+				   FIELD_TYPE="Data"
+				   INACTIVE="N"
+				   NAME="agentIdentity"
+				   PHYSICAL_DATA_TYPE="DTYPE_TEXT"
+				   REQUIRED="N"
+				   USER_VISIBLE="Y"
+				   XML_STYLE="Element"
+				   XML_TAG="agentIdentity"
+				   UPDATED="07/06/2021 20:59:11"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/06/2021 20:58:41"
+				   CREATED_BY="SADMIN">
+					<INTEGRATION_COMPONENT_FIELD_USER_PROP
+					   INACTIVE="N"
+					   NAME="type"
+					   VALUE="string"
+					   UPDATED="07/07/2021 15:50:13"
+					   UPDATED_BY="SADMIN"
+					   CREATED="07/07/2021 15:06:40"
+					   CREATED_BY="SADMIN">
+					</INTEGRATION_COMPONENT_FIELD_USER_PROP>
+				</INTEGRATION_COMPONENT_FIELD>
+				<INTEGRATION_COMPONENT_FIELD
+				   EXTERNAL_NAME="id"
+				   EXTERNAL_REQUIRED="N"
+				   EXTERNAL_SEQUENCE="1"
+				   FIELD_TYPE="Data"
+				   INACTIVE="N"
+				   NAME="id"
+				   PHYSICAL_DATA_TYPE="DTYPE_TEXT"
+				   REQUIRED="N"
+				   USER_VISIBLE="Y"
+				   XML_STYLE="Element"
+				   XML_TAG="id"
+				   UPDATED="07/06/2021 20:59:15"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/06/2021 20:58:57"
+				   CREATED_BY="SADMIN">
+					<INTEGRATION_COMPONENT_FIELD_USER_PROP
+					   INACTIVE="N"
+					   NAME="type"
+					   VALUE="string"
+					   UPDATED="07/07/2021 15:50:16"
+					   UPDATED_BY="SADMIN"
+					   CREATED="07/07/2021 15:06:44"
+					   CREATED_BY="SADMIN">
+					</INTEGRATION_COMPONENT_FIELD_USER_PROP>
+				</INTEGRATION_COMPONENT_FIELD>
+				<INTEGRATION_COMPONENT_FIELD
+				   EXTERNAL_NAME="status"
+				   EXTERNAL_REQUIRED="N"
+				   EXTERNAL_SEQUENCE="3"
+				   FIELD_TYPE="Data"
+				   INACTIVE="N"
+				   NAME="status"
+				   PHYSICAL_DATA_TYPE="DTYPE_TEXT"
+				   REQUIRED="N"
+				   USER_VISIBLE="Y"
+				   XML_STYLE="Element"
+				   XML_TAG="status"
+				   UPDATED="07/06/2021 20:59:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/06/2021 20:59:15"
+				   CREATED_BY="SADMIN">
+					<INTEGRATION_COMPONENT_FIELD_USER_PROP
+					   INACTIVE="N"
+					   NAME="type"
+					   VALUE="string"
+					   UPDATED="07/07/2021 15:50:20"
+					   UPDATED_BY="SADMIN"
+					   CREATED="07/07/2021 15:06:48"
+					   CREATED_BY="SADMIN">
+					</INTEGRATION_COMPONENT_FIELD_USER_PROP>
+				</INTEGRATION_COMPONENT_FIELD>
+				<INTEGRATION_COMPONENT_USER_PROP
+				   INACTIVE="N"
+				   NAME="type"
+				   VALUE="type"
+				   UPDATED="07/06/2021 20:56:02"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/06/2021 20:55:59"
+				   CREATED_BY="SADMIN">
+				</INTEGRATION_COMPONENT_USER_PROP>
+			</INTEGRATION_COMPONENT>
+			<INTEGRATION_OBJECT_USER_PROP
+			   INACTIVE="N"
+			   NAME="api_version"
+			   VALUE="1.0.0"
+			   UPDATED="07/06/2021 20:54:37"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/06/2021 20:54:20"
+			   CREATED_BY="SADMIN">
+			</INTEGRATION_OBJECT_USER_PROP>
+			<INTEGRATION_OBJECT_USER_PROP
+			   INACTIVE="N"
+			   NAME="openapi_version"
+			   VALUE="2.0"
+			   UPDATED="07/06/2021 20:54:43"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/06/2021 20:54:28"
+			   CREATED_BY="SADMIN">
+			</INTEGRATION_OBJECT_USER_PROP>
+			<INTEGRATION_OBJECT_USER_PROP
+			   INACTIVE="N"
+			   NAME="siebel_web_service_name"
+			   VALUE="chatCmdOut"
+			   UPDATED="07/06/2021 20:54:51"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/06/2021 20:54:32"
+			   CREATED_BY="SADMIN">
+			</INTEGRATION_OBJECT_USER_PROP>
+		</INTEGRATION_OBJECT>
+	</PROJECT>
+</REPOSITORY>
+
+
+

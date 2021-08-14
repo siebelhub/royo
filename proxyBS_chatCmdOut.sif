@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="04/12/2021 19:49:58"
+   UPDATED_BY="SADMIN"
+   CREATED="01/23/2021 18:43:58"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="06/22/2021 14:15:13"
+	   NAME="TSIT Chat Server"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="06/22/2021 14:15:15"
+	   UPDATED_BY="SADMIN"
+	   CREATED="06/21/2021 19:13:19"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<BUSINESS_SERVICE
+		   CACHE="N"
+		   CLASS="CSSWSRESTOutboundDispatcher"
+		   EXTERNAL_USE="N"
+		   HIDDEN="N"
+		   INACTIVE="N"
+		   NAME="chatCmdOut"
+		   SERVER_ENABLED="N"
+		   STATE_MANAGEMENT_TYPE="Stateful"
+		   WEB_SERVICE_ENABLED="N"
+		   UPDATED="07/01/2021 18:53:31"
+		   UPDATED_BY="SADMIN"
+		   CREATED="07/01/2021 18:52:17"
+		   CREATED_BY="SADMIN">
+			<BUSINESS_SERVICE_LOCALE
+			   APPLICATION_CODE="STD"
+			   DISPLAY_NAME="chatCmdOut"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   TRANSLATE="Y"
+			   UPDATED="07/01/2021 18:53:36"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/01/2021 18:53:02"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_LOCALE>
+			<BUSINESS_SERVICE_METHOD
+			   COMMENTS="commands"
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="commands:post"
+			   UPDATED="07/02/2021 16:11:46"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/01/2021 18:52:18"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="Set Header Example"
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="CouldBeAToken:header"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="08/09/2021 21:21:05"
+				   UPDATED_BY="SADMIN"
+				   CREATED="08/09/2021 21:11:53"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="Needed? Maybe. Service dependency..."
+				   DATA_TYPE="Hierarchy"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Response"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="08/09/2021 19:18:01"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/02/2021 14:40:41"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="Needed! - If body root is necessary, should be body:body"
+				   DATA_TYPE="Integration Object"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   INTEGRATION_OBJECT="IOAssignTicket"
+				   NAME="content:body"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Hierarchy"
+				   TYPE="Input"
+				   UPDATED="08/09/2021 21:22:13"
+				   UPDATED_BY="SADMIN"
+				   CREATED="07/01/2021 18:52:18"
+				   CREATED_BY="SADMIN">
+					<BUSINESS_SERVICE_METHOD_ARG_USER_PROP
+					   COMMENTS="Needed!"
+					   INACTIVE="N"
+					   NAME="type"
+					   VALUE="object"
+					   UPDATED="08/09/2021 19:17:11"
+					   UPDATED_BY="SADMIN"
+					   CREATED="07/01/2021 18:52:18"
+					   CREATED_BY="SADMIN">
+					</BUSINESS_SERVICE_METHOD_ARG_USER_PROP>
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="true: To enable set Header"
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="isValidationDisabled"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="08/09/2021 21:21:37"
+				   UPDATED_BY="SADMIN"
+				   CREATED="08/09/2021 20:54:28"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_USER_PROP
+			   COMMENTS="Needed?"
+			   INACTIVE="N"
+			   NAME="RESTOutboundImplVersion"
+			   VALUE="1.0.0"
+			   UPDATED="08/09/2021 19:16:42"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/01/2021 18:52:19"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_USER_PROP>
+			<BUSINESS_SERVICE_USER_PROP
+			   COMMENTS="Needed?"
+			   INACTIVE="N"
+			   NAME="api_version"
+			   VALUE="1.0.0"
+			   UPDATED="08/09/2021 19:16:39"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/01/2021 18:52:19"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_USER_PROP>
+			<BUSINESS_SERVICE_USER_PROP
+			   COMMENTS="Needed?"
+			   INACTIVE="N"
+			   NAME="openapi_version"
+			   VALUE="2.0"
+			   UPDATED="08/09/2021 19:16:46"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/01/2021 18:52:19"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_USER_PROP>
+			<BUSINESS_SERVICE_USER_PROP
+			   COMMENTS="Needed?"
+			   INACTIVE="N"
+			   NAME="security"
+			   VALUE="chatCmdOut_securityDefinitions"
+			   UPDATED="08/09/2021 19:16:48"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/01/2021 18:52:19"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_USER_PROP>
+			<BUSINESS_SERVICE_USER_PROP
+			   COMMENTS="Needed!"
+			   INACTIVE="N"
+			   NAME="siebel_port_name"
+			   VALUE="chatCmdOut_port"
+			   UPDATED="08/09/2021 19:16:58"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/01/2021 18:52:19"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_USER_PROP>
+			<BUSINESS_SERVICE_USER_PROP
+			   COMMENTS="Needed!"
+			   INACTIVE="N"
+			   NAME="siebel_web_service_name"
+			   VALUE="chatCmdOut"
+			   UPDATED="08/09/2021 19:17:00"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/01/2021 18:52:19"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_USER_PROP>
+			<BUSINESS_SERVICE_USER_PROP
+			   COMMENTS="Needed!"
+			   INACTIVE="N"
+			   NAME="title"
+			   VALUE="Chat Assignment Ticket"
+			   UPDATED="08/09/2021 19:17:01"
+			   UPDATED_BY="SADMIN"
+			   CREATED="07/01/2021 18:52:19"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_USER_PROP>
+		</BUSINESS_SERVICE>
+	</PROJECT>
+</REPOSITORY>
+
+
+
